@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moving Train Animation</title>
+    <link rel="stylesheet" href="css/train.css">
+</head>
+<body>
+    <div class="rail-container">
+        <!-- Train -->
+        <div class="train">
+            <!-- 10 train cars with windows -->
+            <div class="train-car"><div class="windows"></div></div>
+            <div class="train-car"><div class="windows"></div></div>
+            <div class="train-car"><div class="windows"></div></div>
+            <div class="train-car"><div class="windows"></div></div>
+            <div class="train-car"><div class="windows"></div></div>
+            <div class="train-car"><div class="windows"></div></div>
+            <div class="train-car"><div class="windows"></div></div>
+            <div class="train-car"><div class="windows"></div></div>
+            <div class="train-car"><div class="windows"></div></div>
+            <div class="train-car"><div class="windows"></div></div>
+        </div>
+        
+        <!-- Main track (for current direction) -->
+        <div class="track main-track">
+            <div class="track-line"></div>
+            <div class="track-line"></div>
+        </div>
+
+        <!-- Side track (for opposite direction) -->
+        <div class="track side-track">
+            <div class="track-line"></div>
+            <div class="track-line"></div>
+        </div>
+
+        <!-- Additional track for a second side (for parallel motion or opposite direction) -->
+        <div class="track side-track-2">
+            <div class="track-line"></div>
+            <div class="track-line"></div>
+        </div>
+    </div>
+
+    <script src="js/train.js"></script>
+</body>
+</html>
